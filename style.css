@@ -1,0 +1,949 @@
+
+*{
+    padding:0;
+    margin:0 ;
+    text-align: center;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+} 
+
+
+#navbar {
+    background: #03285f;
+}
+
+#logo {
+    font-size: 40px;
+    font-weight: 900px;
+    color: #d3d3d3;
+    text-shadow: 0px 2px 2px rgb(0, 0, 0);
+}
+
+#logo span {
+    
+    color: #e67e22;
+}
+
+
+.nav-link {
+    font-size: 15px;
+    font-weight: 550;
+    color: #f0f8ff;
+    letter-spacing: 2px;
+    border-radius: 12px;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+    background-color: #e67e22;
+    color: black;
+}
+
+.search-form input {
+    padding: 10px;
+    border-radius: 12px 0 0 12px;
+    border: none;
+}
+
+.search-form button {
+    background: #e67e22;
+    color: #f7f5f1;
+    width: 70px;
+    border: none;
+    padding: 10px;
+    border-radius: 0 12px 12px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.search-form button:hover {
+    background-color: #d35400;
+}
+
+
+.navbar-toggler {
+    color: #e67e22;
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-color: transparent;
+    color: #e67e22;
+    border-radius: 2px;
+    padding: 3px;
+}
+
+
+
+h1, p {
+text-align: center;
+color: rgb(16, 5, 80);
+text-shadow: 2px 2px 4px rgb(32, 32, 32);
+}
+
+
+
+
+.hero-image {
+    background-image: url('./m6.jpg');
+    background-size: cover;
+    height: 100vh;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.text-content h1 {
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.text-content p{
+    color: #f0f8ff;
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto 30px;
+}
+
+.button {
+    background-color: #0655cc;
+    color:#f0f8ff;
+    padding: 20px 25px;
+    border-radius: 17px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+    
+    
+}
+
+.button:hover {
+    background-color: rgb(115, 117, 247);
+    color:#030303;
+}
+
+.button:active {
+    background-color: rgb(1, 1, 19);
+    color:#ebe0e0;
+}
+
+
+
+.popular-places {
+    padding: 60px 20px;
+    background-color: #f2f3f5;
+}
+.popular-places h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: rgb(14, 13, 13);
+}
+.card {
+    border: none;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(95, 166, 247, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #1d5a9b;
+}
+.card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 12px 24px rgba(37, 70, 218, 0.5);
+}
+
+.card img{
+    width: 350px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.raw {
+    
+    display: flex;
+   flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.card {
+    flex: 1;
+    min-width: 300px;
+    max-width: 350px;
+}
+
+
+#logo2 {
+    font-size: 20px;
+    font-weight: 100px;
+    color: #f8f3f3;
+    text-shadow: 0px 2px 2px rgb(27, 27, 27);
+}
+
+#logo2 span {
+    color: #e67e22;
+}
+
+.card .card-body .card-title {
+    color: #e67e22;
+}
+.card .card-body .card-text {
+    color: #ffffff;
+}
+
+
+.services {
+    background-color: #f2f3f5;
+    padding: 60px 20px;
+}
+.services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: rgb(15, 15, 15);
+}
+.services .card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(95, 166, 247, 0.5);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.services .card:hover {
+    transform: translateY(-20px);
+    box-shadow: 0 12px 24px rgba(37, 70, 218, 0.5);
+}
+.services .card-body {
+    text-align: center;
+    padding: 30px;
+    background-color: #1d5a9b;
+}
+.services .card-title {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    font-weight: bold;
+    color: #e67e22;
+}
+.services .card-text {
+    color:black;
+    font-size: 1rem;
+    color: #ecf0f1;
+}
+.services i {
+    color: #ffffff;
+    margin-bottom: 15px;
+}
+
+
+
+
+
+
+
+
+.events-section {
+    padding: 20px;
+    background-color: #f0f0f0;
+    text-align: center;
+}
+
+/* Heading */
+.events-section h2 {
+    font-size: 2rem;
+    color: #333;
+    margin: 20px 0;
+}
+
+/* Events container */
+.events-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 0 20px;
+}
+
+/* Event boxes */
+.event-box {
+    background-color: #03285f;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.event-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.event-video {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.event-box h3 {
+    font-size: 1.5rem;
+    color: #ff6600;
+    margin: 0 0 10px;
+}
+
+.event-box p {
+    font-size: 1rem;
+    color: #fdf9f9;
+    margin: 0 0 10px;
+}
+
+.event-date {
+    display: block;
+    font-size: 0.9rem;
+    color: #ff6600;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.testimonials {
+    background-color: #f2f3f5;
+    padding: 40px 0;
+}
+.testimonials h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    color: rgb(15, 15, 15);
+}
+.testimonial-item {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: #1d5a9b;
+    box-shadow: 0 6px 12px rgba(95, 166, 247, 0.5);
+}
+.testimonial-item:hover {
+    box-shadow: 0 12px 24px rgba(37, 70, 218, 0.5);
+    transform: translateY(-20px);
+}
+.testimonial-item p {
+    font-style: italic;
+    color: #ecf0f1;
+}
+.testimonial-item h5 {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #e67e22;
+}
+
+
+
+
+.hero-section {
+    background: url('./m3.jpg') no-repeat center center;
+    background-size: cover;
+    color:#f8f4f0;
+    padding: 100px 0;
+    text-align: center;
+}
+.hero-section h1 {
+    color: #f7eae0;
+    font-size: 2rem;
+}
+.hero-section p {
+    color: #03285f;
+    font-size: 1.5rem;
+}
+.card {
+    margin: 20px 0;
+}
+
+
+.card-body {
+background-color: #03285f;
+transition: transform 0.3s, width 0.3s, height 0.3sك
+}
+
+.card-body:hover {
+transform: scale(1.1);
+}
+.l2{
+color:#d35400;
+}
+.l3{
+color:#f0f8ff;
+}
+
+.title {
+    text-align: center;
+    color:#d35400; 
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+
+.container {
+    display: flex;
+    justify-content: space-around; 
+}
+
+.recommendation {
+    background-color: #03285f; 
+    width: 30%;
+    padding: 10px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.recommendation img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease; 
+}
+
+
+.recommendation img:hover {
+    transform: scale(1.1); 
+
+}
+
+.content-wrapper {
+    display: flex;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 100%;
+    height: 70vh;
+    margin-bottom: 20px;
+}
+
+.image-container {
+    background-image: url('./m1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 50%;
+    height: 100%;
+}
+
+.text-container {
+    padding: 20px;
+    width: 50%;
+    overflow-y: scroll;
+}
+
+.text-container h2 {
+    margin-top: 0;
+    color: #e67e22;
+    font-size: 20px;
+}
+
+.text-container p {
+    margin-bottom: 20px;
+    color: #0f0c08;
+}
+
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 50px;
+}
+
+.team-member {
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    transition: transform 0.3s ease;
+}
+
+.team-member:hover {
+    transform: scale(1.05);
+}
+
+.team-member img {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    margin-bottom: 10px;
+}
+
+.team-member h3 {
+    font-size: 2.5vw;
+    margin: 10px 0;
+    color: #e67e22;
+}
+
+.team-member p {
+    color: #0f0c08;
+}
+
+table {
+    width: 90%;
+    background-color: #f8f5f5; /* خلفية للجدول */
+    margin: 0 auto; /* توسيط الجدول أفقيًا */
+    border-collapse: collapse; /* دمج الحدود */
+    border: 2px solid #003366;
+}
+
+thead {
+    background-color: #6a8af0 ;/* خلفية الشريط العلوي */
+}
+
+th {
+    color: #070d5a; /* لون النص في العنوان */
+    padding: 15px;
+    text-align: center;
+    text-shadow: 4px 4px 7px rgba(53, 51, 51, 0.5); /* ظل للنص */
+}
+
+tbody td {
+    padding: 15px;
+    text-align: center;
+    color: #333333; /* لون النص في الخلايا */
+    border-bottom: 1px solid #0a56fc; /* إضافة حدود خفيفة للفصل بين الصفوف */
+}
+
+tbody tr:hover {
+    background-color: #a1c6f0; 
+}
+
+.overlay.container {
+    background-image: url('./m9.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat; 
+    opacity: 0.8;
+    width: 100%;
+}
+
+.booking-header {
+    text-align: center;
+    font-size: 3rem;
+    margin-bottom: 30px;
+    
+}
+
+.form-group input,
+.form-group textarea {
+    background-color: transparent;
+    color: black;
+    border: 1px solid rgb(5, 3, 34);
+    
+
+}
+
+.btn-custom {
+    background-color: transparent;
+    border: 1px solid rgb(7, 3, 63);
+    color: rgb(13, 13, 14);
+    transition: all 0.3s ease;
+    
+}
+
+.btn-custom:hover {
+    background-color: rgb(22, 102, 177);
+    color: black;
+    
+}
+
+
+.text-content {
+    overflow: hidden;
+    display: block;
+    transition: height 0.3s ease;
+}
+
+.text-content p {
+    color: rgb(2,2,30);
+    text-shadow: 4px 4px 7px rgba(8, 12, 49, 0.5);
+    margin: 0;
+    padding: 5px 0;
+}
+
+.paragraph:nth-child(1) .text-content {
+    color: #070d5a;
+    height: 50px; /* عرض جزء فقط من الفقرة الأولى */
+}
+
+.paragraph:nth-child(2) .text-content {
+    height: 90px; /* عرض 3 نصائح فقط من الفقرة الثانية */
+}
+
+.text-content.expanded {
+    height: auto; /* عرض الفقرة بالكامل عند التوسيع */
+}
+
+.more-text {
+    display: none; /* إخفاء الجزء الإضافي في البداية */
+}
+
+.read-more {
+    display: block;
+    margin-top: 10px;
+    background-color: transparent;
+    border: 1px solid rgb(248, 242, 242);
+    color: rgb(22, 25, 206);
+    transition: all 0.3s ease;
+}
+
+.read-more:hover {
+    background-color: rgb(47, 47, 163);
+    color: black;
+}
+
+#booking-details {
+border: 1px solid rgb(7, 7, 7);
+color: rgb(7, 48, 109);
+}
+
+#booking-details th, #booking-details td {
+    max-width: 55px;
+    word-wrap: break-word; 
+
+
+
+
+
+border: 1px solid rgb(2, 0, 0);
+color: #ecf0f1;
+}
+
+
+.review {
+padding: 20px;
+background-color: #f1f1f1;
+text-align: center;
+}
+
+.review h1 span {
+display: inline-block;
+font-size: 3rem;
+color: #0f0c08;
+margin: 0 0.5rem;
+}
+
+
+.swiper-container {
+width: 80%;
+padding: 20px 0;
+overflow: hidden;
+margin: auto;
+}
+
+
+.swiper-wrapper {
+display: flex;
+}
+
+
+.swiper-slide {
+width: 30%; 
+flex-shrink: 0;
+display: flex;
+justify-content: center;
+}
+
+
+.box {
+background-color: #fff;
+padding: 20px;
+border-radius: 10px;
+box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+text-align: center;
+width: 100%;
+}
+
+
+.box img {
+width: 100px;
+height: 100px;
+border-radius: 50%;
+object-fit: cover;
+margin-bottom: 15px;
+}
+
+
+.box h3 {
+font-size: 3vw;
+color:#ec9f39 ;
+margin-bottom: 10px;
+}
+
+
+.box p {
+font-size: 2vw;
+color: #0f0c08;      
+margin-bottom: 10px;
+}
+
+
+.stars i {
+color: #e67e22;
+font-size: 1.2rem;
+}
+
+.swiper-pagination {
+display: none;
+}
+
+.faq-container {
+width: 80%;
+margin: auto;
+font-family: Arial, sans-serif;
+}
+
+.faq-item {
+margin-bottom: 10px;
+padding: 10px;
+border: 1px solid #ccc;
+border-radius: 5px;
+}
+
+.faq-question {
+cursor: pointer;
+background-color: #1834d3;
+color: #fafafa;
+padding: 10px;
+margin: 0;
+border-radius: 5px;
+}
+
+.faq-answer {
+display: none;
+padding: 10px;
+background-color: #fafafa;
+border-top: 1px solid #ccc;
+border-radius: 5px;
+margin-top: 5px;
+}
+
+.footer {
+    background-color: #03285f; 
+    color: #f0f8ff;
+    text-align: center;
+    padding: 20px;
+    
+}
+
+.footer p {
+    color: #e67e22;
+    margin: 0;
+    padding: 10px 0;
+
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e67e22; 
+    border: 2px solid #f0f8ff;
+    overflow: hidden;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.social-icon img {
+    width: 100%;
+   height: 100%;
+    object-fit: cover;
+}
+
+.social-icon:hover {
+    background-color: #f0f8ff; 
+    border-color: #e67e22; 
+}
+
+.social-icon:hover img {
+    filter: invert(1); 
+}
+
+
+/* CSS لتنسيق السهم */
+.scroll-to-top {
+    position: fixed; /* يجعل السهم يظل في نفس المكان عند التمرير */
+    bottom: 20px; /* يضع السهم على بعد 20 بكسل من أسفل الصفحة */
+    right: 20px; /* يضع السهم على بعد 20 بكسل من يمين الصفحة */
+    background-color: #003366; /* لون خلفية السهم */
+    color: #ffffff; /* لون نص السهم */
+    border: none; /* إزالة أي حدود حول السهم */
+    padding: 10px; /* إضافة بعض المساحة حول السهم */
+    border-radius: 50%; /* يجعل السهم دائري */
+    text-align: center; /* توسيط النص داخل السهم */
+    font-size: 24px; /* حجم نص السهم */
+    cursor: pointer; /* تغيير شكل المؤشر عند المرور فوق السهم */
+    display: none; /* إخفاء السهم بشكل افتراضي */
+    z-index: 1000; /* تأكد من أن السهم فوق جميع العناصر الأخرى */
+}
+
+.scroll-to-top:hover {
+    background-color: #59a4fa; /* تغيير لون خلفية السهم عند المرور فوقه */
+}
+
+
+ 
+ @media (max-width: 1200px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 12px;
+    }
+}
+
+
+@media (max-width: 992px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 10px;
+    }
+}
+
+
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 8px;
+        font-size: 0.9rem; /* تصغير حجم الخط */
+    }
+}
+
+/* استجابة للشاشات الصغيرة جدًا */
+@media (max-width: 576px) {
+    table {
+        width: 100%;
+    }
+
+    th, td {
+        padding: 6px;
+        font-size: 0.8rem; /* تصغير حجم الخط بشكل أكبر */
+    }
+}
+
+/* الشريط العلوي */
+
+
+/* استجابة للشاشات الكبيرة */
+@media (max-width: 1200px) {
+    .navbar-nav {
+        text-align: center; /* محاذاة العناصر في المنتصف */
+    }
+    
+    .navbar-nav .nav-item {
+        margin-bottom: 10px; /* المسافة بين العناصر */
+    }
+    
+    .search-form {
+        margin-top: 10px; /* المسافة من الأعلى */
+        justify-content: center; /* محاذاة النموذج إلى المركز */
+    }
+}
+
+/* استجابة للشاشات المتوسطة */
+@media (max-width: 992px) {
+    .navbar-brand {
+        font-size: 1.2rem; /* تصغير حجم الخط في الشاشات الأصغر */
+    }
+    
+    .navbar-nav .nav-link {
+        margin-right: 10px; /* تصغير المسافة بين العناصر */
+    }
+    
+    .search-form .form-control {
+        width: 150px; /* تحديد عرض صندوق البحث */
+    }
+}
+
+/* استجابة للشاشات الصغيرة */
+@media (max-width: 768px) {
+    .navbar-nav {
+        display: flex;
+        flex-direction: column; /* تحويل القائمة إلى عمود */
+    }
+    
+    .navbar-nav .nav-item {
+        margin-bottom: 5px; /* تقليل المسافة بين العناصر */
+    }
+    
+    .search-form {
+        margin-top: 10px; /* المسافة من الأعلى */
+    }
+    
+    .team-member img ,.box img {
+        width: 17vw; /* عرض الصورة بنسبة 30% من عرض الشاشة */
+        height: 17vw; /* ارتفاع الصورة بنسبة 30% من عرض الشاشة */
+    }
+
+
+    .search-form .form-control {
+        width: 100%; /* عرض كامل للصندوق */
+    }}
+
+
+
+   
+
+/* استجابة للشاشات الصغيرة جدًا */
+@media (max-width: 576px) {
+    .navbar-brand {
+        font-size: 1rem; /* تصغير حجم الخط بشكل أكبر */
+    }
+    
+    .search-form .form-control {
+        width: 100%; /* عرض كامل للصندوق */
+    }
+    .team-member img ,.box img {
+        width: 10vw; /* عرض الصورة بنسبة 40% من عرض الشاشة */
+        height: 10vw; /* ارتفاع الصورة بنسبة 40% من عرض الشاشة */
+    }
+
+
+
+
+    .search-form .btn {
+        width: 100%; /* عرض كامل للزر */
+        margin-top: 10px; /* المسافة من الأعلى */
+    }
+}

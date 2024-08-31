@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stellar Journeys</title>
+    <link rel="icon" href="./j0.jpg" type="image/jpg">
+
+<link rel="stylesheet" href="./bootstrap.css">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Bigshot+One' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+   
+</head>
+<body>
+      
+      <nav class="navbar navbar-expand-lg" id="navbar">
+        <div class="container">
+            <a class="navbar-brand" href="index.html" id="logo"><span>Stellar</span>Journeys</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon">&#9776;</span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="destinations.html">Destinations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="travel-tips.html">Travel</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about-us.html">About</a>
+                    </li>  
+                </ul>
+                <form class="form-inline search-form ml-auto">
+                    <input class="form-control" type="text" placeholder="Search">
+                    <button class="btn" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+      <div class="welcome-box">
+        <h1 id="logo"><span>B</span>ooking</h1>
+        <p>Welcome to your travel booking portal. Let's plan your next adventure!</p>
+    </div>
+    
+
+
+    <table>
+        <thead>
+            <tr>
+                <th>Flight Number</th>
+                <th>From</th>
+                <th>To</th>
+                <th>Departure Time</th>
+                <th>Arrival Time</th>
+            </tr>
+        </thead>
+        <tbody id="flight-schedule">
+    
+        </tbody>
+    </table>
+
+
+
+
+
+
+<br><br>
+    <div class="overlay container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 id="logo"> <span>o</span>nline <span>B</span>ooking</h2>
+                <br>
+                <br>
+      
+                <div class="paragraph-container">
+            
+                    <div class="paragraph">
+                        <p class="text-content">
+                            Booking flights can be a daunting task, but with some simple tips, the process can become much easier. Make sure you look for promotional deals on different booking sites.
+                        You should also choose the right time to travel to get the best prices.
+                        </p>
+                    
+                    </div>
+            
+                    <br>
+                
+                    <!-- Second Paragraph - Tips -->
+                    <div class="paragraph">
+                        <div class="text-content">
+                            <p>1. Book your ticket in advance to get the best prices.</p>
+                            <br>
+                            <p>2. Avoid traveling during peak times.</p>
+                            <br>
+                            <p>3. Use price comparison apps.</p>
+                            <br>
+                            <span class="more-text">
+                                <p>4. Consider using loyalty points or rewards.</p>
+                                <br>
+                                <p>5. Check the ticket cancellation policies before booking.</p>
+                                <br>
+                                <p>6. Be flexible with your travel dates.</p>
+                            </span>
+                        </div>
+                        <button class="btn btn-custom read-more" onclick="toggleText(this)">Read More</button>
+                    </div>
+                </div>
+                
+          </div>
+
+
+
+
+      
+
+
+
+
+
+
+
+
+    <div class="col-md-6">
+        <h2 id="logo"> <span>B</span>ook a <span>T</span>our</h2>
+        <form id="booking-form">
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="name">Full Name:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your full name">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="email">Email:</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="form-row">
+                <div class="form-group col-md-6">
+                    <label for="date">Date:</label>
+                    <input type="date" class="form-control" id="date">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="ticket-type">Ticket Type:</label>
+                    <select class="form-control" id="ticket-type">
+                        <option value="Economy">Economy</option>
+                        <option value="Business">Business</option>
+                        <option value="First Class">First Class</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form-group full-width">
+                <label for="phone">Phone Number:</label>
+                <input type="number" class="form-control" id="phone" placeholder="Enter your phone number">
+            </div>
+            <div class="form-group full-width">
+                <label for="persons">Number of Persons:</label>
+                <input type="number" class="form-control" id="persons" placeholder="Enter number of persons">
+            </div>
+            <div class="form-group full-width">
+                <label for="comment">Comment:</label>
+                <textarea class="form-control" id="comment" placeholder="Enter your comment"></textarea>
+            </div>
+            <button type="submit" class="btn btn-custom btn-block">Book Now</button>
+        </form>
+        <div id="success-message">Booking Successful!</div>
+        <table id="booking-details" class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Phone</th>
+                    <th>Persons</th>
+                    <th>Date</th>
+                    <th>Ticket Type</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+            </tbody>
+        </table>
+        
+    </div>
+        </div>
+        </div>
+   
+
+    <div class="review" id="review">
+        <h1 id="logo">
+            <span>r</span>e v i e w
+        </h1>
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./0001.jpg" alt="">
+                        <h3>James Davis</h3>
+                        <p>Unforgettable live events by Stellar Journeys,I enjoyed this experience.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./0005.jpg" alt="">
+                        <h3>Olivia Smith</h3>
+                        <p>Stellar Journeys makes travel dreams come true for everyone and have fun.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./008.jpg" alt="">
+                        <h3>Michael Brown</h3>
+                        <p>Stellar Journeys offers unforgettable experiences for all travelers.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./0002.jpg" alt="">
+                        <h3>James Davis</h3>
+                        <p>Traveling with Stellar Journeys is always fun , exciting and vary wondeful attractive.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+              
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./0007.jpg" alt="">
+                        <h3>Eva Jane</h3>
+                        <p>Stellar Journeys provides excellent customer service every single time.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./0003.jpg" alt="">
+                        <h3>Aaron James </h3>
+                        <p>We trust Stellar Journeys  enjoyable travels the service here is excellent .</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./0008.jpg" alt="">
+                        <h3>Mia Kate</h3>
+                        <p>Stellar Journeys’ guides are very knowledgeable and friendly too.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./0004.jpg" alt="">
+                        <h3>Diego Paul</h3>
+                        <p>Stellar Journeys’ packages are affordable and great for everyone.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./0009.jpg" alt="">
+                        <h3>Nina Lou</h3>
+                        <p>We recommend Stellar Journeys to all travelers we know of herf beauty.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="box">
+                        <img src="./00011.jpg" alt="">
+                        <h3>Marco Leo</h3>
+                        <p>Stellar Journeys makes exploring easy and enjoyable for everyone from its ease.</p>
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+  
+        </div>
+    </div>
+
+    <div class="faq-container">
+        <br>
+        <h1 id="logo"> <span>Q</span>uestions</h1>
+        <br>
+        <div class="faq-item">
+            <h3 class="faq-question">What should I do if my flight is canceled?</h3>
+            <div class="faq-answer">Answer: You should contact the airline immediately to rebook your flight or request a refund.</div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">How can I check the status of my flight</h3>
+            <div class="faq-answer">Answer: You can check the status of your flight on the airline’s website, mobile app, or by calling their customer service.</div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">What should I do if I lose my luggage?</h3>
+            <div class="faq-answer">Answer: Report the loss to the airline’s baggage service office immediately.</div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">Is Wi-Fi available on the plane?</h3>
+            <div class="faq-answer">Answer: Many airlines offer in-flight Wi-Fi, but availability and cost vary.</div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">What should I do if I feel unwell during the flight?</h3>
+            <div class="faq-answer">Answer: Inform a flight attendant immediately; they are trained to assist with medical issues.</div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">How can I request assistance for a disability?</h3>
+            <div class="faq-answer">Answer: Contact the airline in advance to request any special assistance you may need during your journey.</div>
+        </div>
+        <div class="faq-item">
+            <h3 class="faq-question">What are the in-flight entertainment options?</h3>
+            <div class="faq-answer">Answer: In-flight entertainment varies by airline and aircraft. It typically includes movies, TV shows, music, and games.</div>
+        </div>
+    </div>
+
+
+
+    <footer class="footer">
+        <p>© 2024 Stellar Journeys. All rights reserved.</p>
+        <div class="social-icons">
+            <a href="http://Facebook.com" target="_blank" class="social-icon"><img src="./o.jpg" alt="Facebook"></a>
+            <a href="http://linkedin.com" target="_blank" class="social-icon"><img src="./o10.jpg" alt="linkedin"></a>
+            <a href="http://YouTube.com" target="_blank" class="social-icon"><img src="./o6.jpg" alt="YouTube"></a>
+            <a href="http://WhatsApp.com" target="_blank" class="social-icon"><img src="./o5.jpg" alt="WhatsApp"></a> 
+        </div>
+        <p>Thank you for visiting our website!</p>
+    </footer>
+    <a href="#" class="scroll-to-top">
+        <span>&uarr;</span>
+    </a>
+
+    <script src="./swiper-bundle.min.js"></script>
+<script src="./jquery-3.7.1.js"></script>
+<script src="./bootstrap.js"></script> 
+<script src="./script.js" ></script>
+</body>
+</html>
